@@ -1,4 +1,4 @@
-package com.starkoracia.sweetterspring
+package com.starkoracia.sweaterspring
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

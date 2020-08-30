@@ -1,3 +1,35 @@
 {{> header}}
-Check the Must-title = {{title}}
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="Введите сообщение">
+        <input type="text" name="tag" placeholder="Тэг">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+<br/>
+<div>
+    <form method="post" action="filter">
+        <input type="text" name="filter">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <button type="submit">Найти</button>
+    </form>
+</div>
+<br/>
+
+<div>
+    <table border="1">
+        <tr>
+            <th></th><th>Messages</th>
+        </tr>
+        <tr>
+            <th>Id</th><th>Message</th><th>Teg</th>
+        </tr>
+        {{#messages}}
+            <tr>
+                <td>{{id}}</td><td>{{text}}</td><td>{{tag}}</td>
+            </tr>
+        {{/messages}}
+    </table>
+</div>
 {{> footer}}
