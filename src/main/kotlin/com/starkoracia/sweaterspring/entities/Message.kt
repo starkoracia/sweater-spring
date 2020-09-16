@@ -1,13 +1,19 @@
 package com.starkoracia.sweaterspring.entities
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 
 @Entity
 class Message(
-        private var text: String,
-        private var tag: String,
-        @Id @GeneratedValue(strategy = GenerationType.AUTO)
-        private var id: Long? = null)
+        var text: String,
+        var tag: String,
+        @ManyToOne(fetch = FetchType.EAGER)
+        @JoinColumn(name = "user_id")
+        var author: User?) {
+
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    var id: Long? = null
+
+    var filename: String? = null
+
+    fun getAuthorName() = author?.username ?: "<none>"
+}
