@@ -2,7 +2,7 @@
 
 <#macro page>
     <!DOCTYPE html>
-
+    <html lang="ru-Ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,13 +12,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
               integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
               crossorigin="anonymous">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 
-    <body>
-
-    <#include "../navbar.ftl"/>
-
-    <div class="container mt-5">
+    <body class="body-bg-coral">
+    <div class="img-bg-dark">
+        <#include "../navbar.ftl"/>
+    </div>
+    <div class="container mt-5 ">
         <#nested >
     </div>
 
@@ -32,7 +33,6 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
     </body>
-
     </html>
 </#macro>
 

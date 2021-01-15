@@ -1,3 +1,26 @@
-body {
+label.xxx:hover {
+    color: coral;
+    font-size: larger;
+}
+label.xxx:active {
+    font-size: larger;
     color: blue;
+}
+a.edit-user:hover{
+    color: coral;
+}
+a.edit-user{
+    color: aqua;
+}
+div.img-bg-coral,
+body.body-bg-coral{
+    background-color: rgba(172,77,0,0.58);
+}
+div.img-bg-dark,
+nav.nav-1 {
+    background-color: rgba(0,0,0,0.79);
+    color: antiquewhite;
+}
+div.invalid-feedback {
+    color: black;
 }

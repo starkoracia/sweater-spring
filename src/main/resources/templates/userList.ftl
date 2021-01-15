@@ -1,22 +1,13 @@
 <#import "macros/common.ftl" as c>
 
 <@c.page>
-    <table>
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
+    <h3>${userChannel.username}</h3>
+    <div class="mt-3">${type}</div>
+    <ul class="list-group">
         <#list users as user>
-            <tr>
-                <td>${user.username}</td>
-                <td><#list user.roles as role>${role}<#sep>, </#list></td>
-                <td><a href="/user/${user.id}">Edit user</a></td>
-            </tr>
+            <li class="list-group-item">
+                <a href="/user-messages/${user.id}">${user.getUsername()}</a>
+            </li>
         </#list>
-        </tbody>
-    </table>
+    </ul>
 </@c.page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="sweater@localhost" uuid="69a62205-5422-4b6b-acfa-7a12bbe6650d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/sweater</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="sweater@18.197.199.34" uuid="66f9ef49-002f-4274-aa10-13e13f2d1787">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://18.197.199.34:5432/sweater</jdbc-url>
+    </data-source>
+  </component>
+</project>
